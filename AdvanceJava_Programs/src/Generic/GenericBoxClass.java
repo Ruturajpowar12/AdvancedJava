@@ -6,7 +6,7 @@ package Generic;
 class Box<T>{
 	T t;
 	
-	//value set by constructor
+	//value set by constructor .
 	Box(T t){
 		this.t = t;
 	}
