@@ -1,1 +1,21 @@
 /bin/
+.settings
+
+# Eclipse
+.metadata/
+.classpath
+.project
+.settings/
+
+# Java compiled files
+*.class
+
+# Build output
+target/
+bin/
+
+# Maven
+.mvn/
+
+# Logs
+*.log
