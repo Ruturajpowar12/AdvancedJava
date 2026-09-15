@@ -1,28 +1,21 @@
 package search;
+
 import java.util.Scanner;
 
-public class BinarySearch {
+public class LinearSearch {
 	
-	public static int binarySearch(int arr[],int size, int target) {
-		int low =0;
-		int high = size - 1;
+	public static int linearSearch(int arr[],int size, int target) {
 		
-		while(low <= high) {
-			int mid = (low + high)/2;
-			
-			if(arr[mid]== target) {
-				return mid;
-			}else if(arr[mid]<target) {
-				low = mid + 1;
-			}else {
-				high = mid - 1;
+		for(int i=0;i<size;i++) {
+			if(arr[i]==target) {
+				return i;
 			}
 		}
+		
 		return -1;
 	}
 
 	public static void main(String[] args) {
-		
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("Enter the Array Size :");
@@ -39,7 +32,7 @@ public class BinarySearch {
 		System.out.print("Enter Target Element :");
 		int target = sc.nextInt();
 		
-		int result = binarySearch(arr,n,target);
+		int result = linearSearch(arr,n,target);
 		
 		if(result != -1) {
 			System.out.println("Target element found at Index  "+result);
@@ -48,7 +41,7 @@ public class BinarySearch {
 		}
 		
 		sc.close();
-			
+
 	}
 
 }
