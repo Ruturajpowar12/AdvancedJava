@@ -11,7 +11,7 @@ class Box<T>{
 		this.t = t;
 	}
 
-	//value set by setter function
+	//value set by setter function.
 //	T setValue(T t) {
 //		this.t = t;
 //	}
