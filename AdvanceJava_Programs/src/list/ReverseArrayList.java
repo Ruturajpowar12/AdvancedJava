@@ -1,6 +1,6 @@
 package list;
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.*;
+
 
 //Write a program to reverse an ArrayList without creating another list.
 
@@ -13,8 +13,10 @@ public class ReverseArrayList {
 		list.addAll(Arrays.asList(nums));
 		System.out.println(list);
 		
-		;
-		System.out.println(list.reversed());
+		Collections.reverse(list);
+		System.out.println(list);
+		
+//		System.out.println(list.reversed());
 		
 		
 	}
