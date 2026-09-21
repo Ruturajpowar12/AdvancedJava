@@ -1,6 +1,7 @@
 package list;
 import java.util.ArrayList;
 import java.util.LinkedList;
+//Write a program to demonstrate the difference between ArrayList and LinkedList.
 
 public class ArrayListVSLinkedList {
 
