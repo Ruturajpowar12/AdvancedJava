@@ -30,6 +30,8 @@ public class LinkedListasQueue {
 			System.out.print(val+" ");
 		}
 		
+		System.out.println("\nQueue isEmpty : "+q.isEmpty());
+		
 	}
 
 }
