@@ -10,14 +10,14 @@ import java.util.List;
 
 public class BankTransactionAmounts {
 	   public static void maxAmount(List<? extends Number> list) {
-	        if (list == null || list.isEmpty()) {
-	        	return;
-	        }
-
-	        
-	        Number max = Collections.max(list, (n1, n2) -> Double.compare(n1.doubleValue(), n2.doubleValue()));
-
-	        System.out.println("Maximum Transaction Amount: " + max);
+	      
+		   double max = Double.MIN_VALUE;
+		   
+		   for(Number val : list) {
+			   if(val.doubleValue() > max) {
+				   max = val.doubleValue();			   }
+		   }
+		   System.out.println("Maximum Amount is : "+ max );
 	    }
 
 	public static void main(String[] args) {
