@@ -1,9 +1,7 @@
 package wildcardRealLife;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
+
 
 //A banking application stores transaction amounts using Integer, Float, and Double. 
 //Write a method using List<? extends Number> to find the maximum transaction amount.

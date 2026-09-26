@@ -1,8 +1,6 @@
 package wildcardRealLife;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;;
 
 //An e-commerce application has a method that receives a list of products 
 //and only needs to display them. The list may contain Book, Mobile, Laptop, or 
