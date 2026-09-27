@@ -1,10 +1,8 @@
 package mapTreeMap;
 
-import java.util.Collection;
-import java.util.Collections;
+
 import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Set;
+
 import java.util.TreeMap;
 
 //Use TreeMap<Integer,String> for marks to student names. 
