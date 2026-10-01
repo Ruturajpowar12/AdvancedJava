@@ -26,10 +26,14 @@ public class SortedEmployeeIDs {
 				max = val;
 			}
 			
-			if(int val : set) {
-				
+			if(val < min) {
+				min = val;
 			}
 		}
+		System.out.println("largest value :"+max);
+		System.out.println("smallest value :"+min);
+		
+		
 		
 	}
 
