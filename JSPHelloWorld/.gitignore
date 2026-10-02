@@ -1,0 +1,56 @@
+/build/
+# Compiled class files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+*.nar
+
+# VM crash logs
+hs_err_pid*
+replay_pid*
+
+# Build directories & Maven/Gradle outputs
+target/
+build/
+bin/
+.gradle/
+.mvn/
+
+# Eclipse specific files (uncomment .project and .classpath if sharing project config is not desired)
+.settings/
+.metadata
+tmp/
+*.tmp
+*.bak
+*.swp
+local.properties
+.loadpath
+.factorypath
+
+# IntelliJ IDEA specific files
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# NetBeans specific files
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+
+# Visual Studio Code
+.vscode/
+
+# Operating System metadata
+.DS_Store
+Thumbs.db
+```
+
+<FollowUp>
+If you are using a specific build tool or IDE like **Maven**, **Gradle**, or **Eclipse**, let me know and I can customize this list further for your setup.
+</FollowUp>
