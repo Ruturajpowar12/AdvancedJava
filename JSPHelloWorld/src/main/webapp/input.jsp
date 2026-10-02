@@ -38,5 +38,15 @@
     <br>
     <input type="submit" value="Check Prime Number">
 </form>
+
+<br>
+
+<form action="calender.jsp">
+	<h3>UserGreeting calendar</h3>
+    <label for="u1">Enter user name:</label>
+    <input type="text" name="userNm" id="u1">
+    <br>
+    <input type="submit" value="user greeting">
+</form>
 </body>
 </html>
