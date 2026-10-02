@@ -8,19 +8,33 @@
 </head>
 <body>
 
+<form>
+	<h3>UserGreeting calendar</h3>
+    <label for="u1">Enter user name:</label>
+    <input type="text" name="userNm" id="u1">
+    <br>
+    <input type="submit" value="user greeting">
+</form>
+<br>
+
 <%
    Calendar c = Calendar.getInstance();
  int hour = c.get(Calendar.HOUR_OF_DAY);
  
  String user = request.getParameter("userNm");
  
- 
- if(hour>0 && hour<12){
-	 out.println("Good Morning "+user);
- }else if(hour>12 && hour<15){
-	 out.println("Good Afternoon "+user);
+ if(user ==""){
+	 out.println();
+	 return;
  }else{
-	 out.println("Good Evening "+user);
+
+	 if(hour>0 && hour<12){
+		 out.println("Good Morning "+user);
+	 }else if(hour>12 && hour<15){
+		 out.println("Good Afternoon "+user);
+	 }else{
+		 out.println("Good Evening "+user);
+	 }
  }
 %>
 

@@ -11,7 +11,7 @@
 
  <% out.print("Hello World form Jsp!"); %> <br/>
 <a href="prime.jsp">Click to PrimeNumber page!</a> <br/><br/>	
-<a href="input.jsp">Click to Input page!</a>
- 
+<a href="input.jsp">Click to Input page!</a><br/><br/>
+ <a href="calender.jsp">Click to user Greeting!</a>
 </body>
 </html>
