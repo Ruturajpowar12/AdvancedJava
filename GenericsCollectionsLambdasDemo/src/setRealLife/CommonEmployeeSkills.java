@@ -1,8 +1,8 @@
 package setRealLife;
 
-import java.util.ArrayList;
+
 import java.util.HashSet;
-import java.util.List;
+
 
 //Use HashSet<String> for two employees' skills and find common skills, skills unique to each, and all unique skills
 
