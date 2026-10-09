@@ -30,6 +30,7 @@ public class FunctionInterface {
 		System.out.println("Cube of "+num+" is "+cube.apply(num));
 		
 		System.out.println("Check number "+num+" is "+checkevenodd.apply(num));
+		sc.close();
 	}
 
 }
