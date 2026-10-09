@@ -22,6 +22,7 @@ public class PredicateInterface {
 		}else {
 			System.out.println(num+" is odd " );
 		}
+		sc.close();
 
 	}
 
