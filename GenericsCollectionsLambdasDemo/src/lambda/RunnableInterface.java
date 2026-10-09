@@ -1,5 +1,7 @@
 package lambda;
 
+// takes input & no return value & direct print 
+
 public class RunnableInterface {
 
 	public static void main(String[] args) {
