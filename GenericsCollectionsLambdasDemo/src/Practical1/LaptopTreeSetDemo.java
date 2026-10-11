@@ -1,8 +1,7 @@
 package Practical1;
 
-import Practical1.Laptop;
-import java.util.TreeSet;
 import java.util.Comparator;
+import java.util.TreeSet;
 
 public class LaptopTreeSetDemo {
     public static void main(String[] args) {
