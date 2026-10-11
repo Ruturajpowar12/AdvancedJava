@@ -15,10 +15,9 @@ class Laptop<T> {
     }
 
     void display() {
-        System.out.println("Model: " + model);
-        System.out.println("Company: " + companyNm);
-        System.out.println("Price: " + price);
-        System.out.println("Screen Size: " + screenSize);
+        System.out.println("Model: " + model +", Company: " + companyNm +", Price: "
+        		+ price + ", Screen Size: " + screenSize);
+     
     }
 }
 
