@@ -6,8 +6,7 @@ class Laptop<T> {
     double price;
     double screenSize;
 
-    Laptop(T model, String companyNm, double price,
-           double screenSize) {
+    Laptop(T model, String companyNm, double price, double screenSize) {
         this.model = model;
         this.companyNm = companyNm;
         this.price = price;
@@ -15,17 +14,16 @@ class Laptop<T> {
     }
 
     void display() {
-        System.out.println("Model: " + model +", Company: " + companyNm +", Price: "
-        		+ price + ", Screen Size: " + screenSize);
-     
+        System.out.println("Model: " + model + ", Company: " + companyNm + ", Price: " + price + ", Screen Size: " + screenSize);
     }
 }
 
 public class LaptopDemo {
     public static void main(String[] args) {
-        Laptop<String> l1 =
-            new Laptop<>("Inspiron 15", "Dell", 55000, 15.6);
+        System.out.println("Ruturaj Powar");
+        System.out.println("37");
 
+        Laptop<String> l1 = new Laptop<>("Inspiron 15", "Dell", 55000, 15.6);
         l1.display();
     }
 }
