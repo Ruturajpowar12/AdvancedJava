@@ -1,9 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" %>
+<%@ page import="jakarta.servlet.http.Cookie" %>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Cookie Session Program</title>
+    <title>Cookie Visit Counter</title>
 </head>
 <body>
 <%
@@ -12,33 +15,33 @@
     boolean found = false;
 
     Cookie[] cookies = request.getCookies();
+
     if (cookies != null) {
         for (Cookie cookie : cookies) {
             if ("pgCount".equals(cookie.getName())) {
                 try {
-                    pgCount = Integer.parseInt(cookie.getValue());
-                    pgCount++;
+                    pgCount = Integer.parseInt(cookie.getValue()) + 1;
                 } catch (NumberFormatException e) {
                     pgCount = 1;
                 }
-                cookie.setValue(String.valueOf(pgCount));
-                cookie.setMaxAge(one_min);
-                response.addCookie(cookie);
                 found = true;
                 break;
             }
         }
     }
 
-    if (!found) {
-        Cookie newCookie = new Cookie("pgCount", String.valueOf(pgCount));
-        newCookie.setMaxAge(one_min);
-        response.addCookie(newCookie);
-    }
+    Cookie newCookie =
+        new Cookie("pgCount", String.valueOf(pgCount));
 
-    out.println("You have hit this page <b> " + pgCount + "</b> times.");
+    newCookie.setMaxAge(one_min); 
+    newCookie.setPath(request.getContextPath().isEmpty()? "/" : request.getContextPath());
+
+    response.addCookie(newCookie);
 %>
-<br>
-<a href="cookiesSession.jsp">Hit Again!</a>
+
+<h2>Cookie Visit Counter</h2>
+<p>You have visited this page <b><%= pgCount %></b> times.</p>
+
+<a href="visitCount.jsp">Hit Again!</a>
 </body>
 </html>

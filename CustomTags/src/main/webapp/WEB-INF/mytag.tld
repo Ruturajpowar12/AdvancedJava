@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1">
+<tlib-version>1.0</tlib-version>
+<short-name>myTag</short-name>
+<url>/WEB-INF/mytag.tld</url>
+<tag>
+	<name>simpleDt</name>
+	<tag-class>com.MyCustomTags</tag-class>
+	<body-content>empty</body-content>
+</tag>
+<tag>
+	<name>numPow</name>
+	<tag-class>com.PowOfNum</tag-class>
+	<attribute>
+		<name>num</name>
+		<required>true</required>
+	</attribute>
+	<attribute>
+		<name>pow</name>
+		<required>true</required>
+	</attribute>
+
+
+</tag>
+<tag>
+	<name>red</name>
+	<tag-class>com.RedColor</tag-class>
+	
+</tag>
+</taglib>

@@ -7,21 +7,21 @@
 <title>User Profile</title>
 <style type="text/css">
 body{
-background-color:powderblue;
-height:100vh;
+	background-color:powderblue;
+	height:100vh;
 }
 .box{
-margin:70px 0px 0px 70px;
-background-color:white;
-width:400px;
-padding:10px 0px 10px 20px;
-border-radius:8px;
+	margin:70px 0px 0px 70px;
+	background-color:white;
+	width:400px;
+	padding:10px 0px 10px 20px;
+	border-radius:8px;
 }
 button{
-margin-left:130px;
+	margin-left:130px;
 }
 a{
-text-decoration:none;
+	text-decoration:none;
 }
 
 </style>

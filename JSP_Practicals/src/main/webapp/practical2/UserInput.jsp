@@ -7,18 +7,18 @@
 <title>User Input</title>
 <style>
 body{
-background-color:powderblue;
-height:100vh;
+	background-color:powderblue;
+	height:100vh;
 }
 .box{
-margin:70px 0px 0px 70px;
-background-color:white;
-width:400px;
-padding:10px;
-border-radius:8px;
+	margin:70px 0px 0px 70px;
+	background-color:white;
+	width:400px;
+	padding:10px;
+	border-radius:8px;
 }
 input{
-margin-bottom:10px;}
+	margin-bottom:10px;}
 
 </style>
 </head>

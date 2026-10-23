@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="3.0">
+
+    <tlib-version>1.0</tlib-version>
+    <short-name>mytags</short-name>
+    <uri>/WEB-INF/uppercase.tld</uri>
+
+    <tag>
+        <name>uppercase</name>
+        <tag-class>com.UpperCaseTag</tag-class>
+        <body-content>empty</body-content>
+
+        <attribute>
+            <name>value</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+</taglib>
