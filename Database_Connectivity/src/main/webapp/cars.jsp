@@ -1,4 +1,3 @@
-
 <%@ page import="java.sql.*" %>
 <%
     String url = "jdbc:mysql://localhost:3306/jspdb";
