@@ -7,4 +7,9 @@
    <bean id="greet" class="mypack.GreetingMsg">
        <property name="msg" value="Hello Java!"></property>
    </bean>
+   <bean id="personInfo" class="mypack.Person">
+   <constructor-arg type="String" index="0" value="Ruturaj"></constructor-arg>
+    <constructor-arg type="String" index="1" value="Kolhapur"></constructor-arg>
+     <constructor-arg  index="2" value="21"></constructor-arg>
+   </bean>
 </beans>

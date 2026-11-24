@@ -1,11 +1,9 @@
 package mypack;
 
 public class GreetingMsg {
-    private String msg; 
-    public GreetingMsg() {
-		super();
-	}
 
+    private String msg;
+    
 	public void setMsg(String msg) {
         this.msg = msg;
     }
